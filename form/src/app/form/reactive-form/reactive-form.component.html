@@ -1,0 +1,37 @@
+<div class="form-container">
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" formControlName="name" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="contact">Contact Number</label>
+      <input type="text" formControlName="contact" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" formControlName="email" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="text" formControlName="password" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="text" formControlName="confirmPassword" class="form-control">
+    </div>
+
+    <button type="submit" name="button" class="btn btn-success">Add User</button>
+  </form>
+</div>
+<hr />
+<div class="list-container">
+  <ul class="user-list">
+    <li class="list-item" *ngFor="let user of userList" >
+    </li>
+  </ul>
+</div>
