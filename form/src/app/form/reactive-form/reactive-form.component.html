@@ -31,7 +31,12 @@
 <hr />
 <div class="list-container">
   <ul class="user-list">
-    <li class="list-item" *ngFor="let user of userList" >
+    <li class="list-item" *ngFor="let user of userList">
+      <B>Name: </B> {{user.name}}
+      <B>Contact:</B>: {{user.contact}}
+      <B>Email:</B> {{user.email}}
+      <B>Password:</B>{{user.password}}
+      <B>Confirm Password:</B>{{user.confirmPassword}}
     </li>
   </ul>
 </div>

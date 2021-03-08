@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from 'src/app/model/user';
 
 @Component({
   selector: 'app-reactive-form',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reactive-form.component.scss']
 })
 export class ReactiveFormComponent implements OnInit {
+  userList: User[] = [];
 
   constructor() { }
 
